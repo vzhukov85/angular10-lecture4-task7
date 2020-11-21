@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular10-lecture4-task7';
+  statement = true;
+
+  toggle(): void {
+    this.statement = !this.statement;
+  }
 }
